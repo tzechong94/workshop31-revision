@@ -1,0 +1,14 @@
+<h1>Cart</h1>
+
+<div *ngIf="fruits">
+    <table>
+        <tr class="item-container" *ngFor="let fruit of fruits; let idx = index">
+            <td>
+                <img src="./assets/images/{{fruit.name}}.png" height="50px">
+            </td>
+            <td>
+                <p>Quantity {{fruit.quantity}}</p>
+             </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,17 @@
+<h1>Please select</h1>
+
+<table>
+
+    <tr class="item-container" *ngFor="let fruit of fruits; let idx = index">
+        <td>
+            <img src="./assets/images/{{fruit.name}}.png" height="50px">
+        </td>
+        <td>
+            <p> Item {{idx}}</p>
+        </td>
+        <td>
+
+            <button type="button" (click)="addToCart(fruit)">Add to Cart</button>
+        </td>
+    </tr>
+</table>
